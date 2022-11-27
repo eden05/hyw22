@@ -1,12 +1,599 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>한양여대 11회 스마트IT과 졸업작품전</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      :root {
+        --dataName001: 기가막히조;
+      }
+    </style>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+</style>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-1.12.4.min.js"
+    ></script>
   </head>
   <body>
-    test 수정
+    <div class="mainImg"><img src="img/topbg.jpg" /></div>
+
+    <div class="wrapper">
+      <ul>
+        <li class="list active" data-filter="all">All</li>
+        <li class="list" data-filter="001">기가막히조</li>
+        <li class="list" data-filter="002">원투에스</li>
+        <li class="list" data-filter="003">PATH</li>
+        <li class="list" data-filter="004">행복하조</li>
+        <li class="list" data-filter="005">Tastycode</li>
+        <li class="list" data-filter="006">드라이브</li>
+        <li class="list" data-filter="007">김서윤</li>
+        <li class="list" data-filter="008">날꾸</li>
+        <li class="list" data-filter="009">고민보다GO</li>
+        <li class="list" data-filter="010">사심</li>
+        <li class="list" data-filter="011">Egg</li>
+        <li class="list" data-filter="012">파이</li>
+        <li class="list" data-filter="013">미생</li>
+        <li class="list" data-filter="014">Hello World</li>
+        <li class="list" data-filter="015">비타민C</li>
+      </ul>
+      <div class="poster"></div>
+    </div>
+    <!-- 팝업 모달 -->
+
+    <div id="01" class="modal">
+      <form class="modal-content animate" method="post">
+        <div class="con-container">
+          <span
+            onclick="document.getElementById('01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <b>기가막히조 팀</b><br /><br />
+          <img src="001/idaon.jpg" width="320px" height="206px" /><br /><br />
+          <p>
+            [아이다온] <br />
+            아이다온은 공공데이터 포털에서 가져온 데이터를 통해 신뢰도 있는
+            정보를 사용자에게 제공합니다. 사용자는 제공받은 정보를 조건 설정과
+            알림 기능, 바로 신청 등의 기능은 물론 커뮤니티 소통, 중고 거래 등
+            다양한 기능을 사용할 수 있으며 인공지능을 활용한 챗봇 기능을 제공해
+            앱 사용이 미숙한 사람도 쉽게 사용할 수 있는 임신, 출산, 육아
+            어플리케이션입니다.
+          </p>
+          <br />
+          <h5>
+            김설하(백앤드, 프론트앤드 보조), 이제윤(프론트앤드, 디자인, 백앤드
+            보조), 이하연(총괄, 프론트앤드, 디자인)
+          </h5>
+          <br />
+          <button>
+            <a href="https://youtu.be/dJenlDLfeuA" target="_blank">Youtube</a>
+          </button>
+          <button><a href="001/idaon.pdf" target="_blank">PDF</a></button>
+          <button>
+            <a
+              href="001/idaon.apk"
+              type="application/vnd.android.package-archive"
+              target="_blank"
+              >APK</a
+            >
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div id="02" class="modal">
+      <form class="modal-content animate" method="post">
+        <div class="con-container">
+          <span
+            onclick="document.getElementById('02').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <b>원투에스 팀</b><br /><br />
+          <img src="002/wawa1-2.png" width="320px" height="207px" />
+          <img src="002/wawa2.png" width="320px" height="207px" />
+          <br /><br />
+          <p>
+            와와(WAWA)<br />
+            1인 가구 여성들이 안전하게 거래하고 소통하는 앱입니다.<br />
+            와와는 1인 가구 여성들의 안전에 대한 불안감과 소비 상황에서의
+            불편함을 해결하고자 합니다. 여성 인증 및 공공데이터 기반 안전지도로
+            여성에게 안전한 거래 공간을 확보하고, 소분 및 중고거래 글 작성과
+            채팅으로 1인 가구가 편리하게 거래할 수 있도록 합니다.
+          </p>
+          <br />
+          <h5>이송이(프론트엔드), 송민지(백엔드)</h5>
+          <br />
+          <button>
+            <a href="https://youtu.be/NytHIwsyxC4" target="_blank">Youtube</a>
+          </button>
+          <button>
+            <a
+              href="https://drive.google.com/file/d/1Rln2Y9HQnEmzmAIbEJdmKCurbYA6O5V4/view?usp=sharing"
+              target="_blank"
+              >PDF</a
+            >
+          </button>
+          <br /><br />
+        </div>
+      </form>
+    </div>
+    <div id="03" class="modal">
+      <form class="modal-content animate" method="post">
+        <div class="con-container">
+          <span
+            onclick="document.getElementById('03').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          PATH 팀<br /><br />
+          <img src="003/home.jpg" />
+          <img src="003/form.jpg" />
+          <img src="003/result.jpg" />
+          <img src="003/type.jpg" />
+          <br /><br />
+          <p>
+            <br />
+            PATH - PASS가 진행한 프로젝트는 mz 세대를 위한 맞춤형 검사
+            플랫폼으로 각자 취향에 맞는 소설을 추천해 주는 웹페이지입니다.<br />
+            저희 과제는 젊은 세대의 독서량을 증진시키고 문해력을 개선하는 것이
+            목표이므로 mz 세대들 사이에서 유행하고 있는 mbti와 같은 여러 심리
+            테스트를 접목시켜 과제를 진행하였습니다.<br />
+            mz 세대의 특징을 고려하여 자신의 성향을 파악할 수 있는 유도 설문들이
+            포함된 적성 심리 검사를 통해 해당 적성이 선호할 만한 책을 추천해
+            주도록 웹을 구성하였습니다.
+          </p>
+          <br />
+          <h5>
+            손규령(프론트/백엔드/기획), 김민지(프론트/백엔드/기획),
+            김민선(프론트/백엔드/디자인)
+          </h5>
+          <br />
+          <button>
+            <a href="https://youtu.be/sqzNCe7nPto" target="_blank">Youtube</a>
+          </button>
+          <button>
+            <a href="003/10%EC%A1%B0_path.pdf" target="_blank">PDF</a>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div id="04" class="modal">
+      <form class="modal-content animate" method="post">
+        <div class="con-container">
+          <span
+            onclick="document.getElementById('04').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          행복하조 팀<br /><br />
+          <img src="004/b01.png" width="320px" height="206px" />
+          <img src="004/b02.png" width="320px" height="206px" />
+          <img src="004/b03.png" width="320px" height="206px" />
+          <br /><br />
+          <p>
+            게임의 데모버전을 웹에서 플래이 해볼 수 있는 웹사이트 입니다. <br />
+            게임 페이지에서 댓글을 달거나, 데모를 다운받을 수 있습니다.<br />
+            게시판에서 이용자들과 교류하거나 자신이 만든 게임의 업로드 요청을
+            올릴 수 있습니다<br />
+          </p>
+          <br />
+          <h5>
+            장예원(프론드앤드,디자인), 정진아(백앤드,디자인),
+            조여빈(프론드앤드,디자인)
+          </h5>
+          <br />
+          <button>
+            <a href="https://youtu.be/3OmNH34lR9c" target="_blank">Youtube</a>
+          </button>
+          <button>
+            <a
+              href="https://drive.google.com/file/d/1pb_p3flFczPfcF_7nKgcANfmBNlzqxlx/view?usp=sharing"
+              target="_blank"
+              >PDF</a
+            >
+          </button>
+          <button>
+            <a href="http://43.201.110.245/" target="_blank">URL</a></button
+          ><br /><br />
+        </div>
+      </form>
+    </div>
+
+    <div id="05" class="modal">
+      <form class="modal-content animate" method="post">
+        <div class="con-container">
+          <span
+            onclick="document.getElementById('05').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          tastycode 팀<br /><br />
+          <img src="005/img01.jpg" />
+          <img src="005/img02.jpg" />
+          <img src="005/img03.jpg" />
+          <br /><br />
+          <p>
+            나만의 레시피를 공유하고 밀키트로 제작하는 어플, 쿡키트 <br />
+            레시피를 자유롭게 올려 요리를 하려는 사람에게 도움을 주고, 기존
+            레시피 앱과는 달리 밀키트로 제작해 제공한다. 앱에서 제공하는
+            밀키트를 사용하면 요리를 못하거나 자취를 하는 등의 사람들은 보다
+            쉽게 식사를 할 수 있고, 여러 사람들이 업로드한 레시피이기 때문에
+            시중에 판매되는 밀키트의 메뉴보다 다양하게 즐길 수 있다.
+          </p>
+          <br />
+          <h5>
+            김주미(백엔드, DB), 권희선(백엔드, DB), 이다혜(프론트엔드, 개발),
+            이지은(프론트엔드, 개발)
+          </h5>
+          <br />
+          <button>
+            <a href="https://youtu.be/7HoNTpJWnYo" target="_blank">Youtube</a>
+          </button>
+          <button>
+            <a
+              href="https://drive.google.com/file/d/1NNPC8dj9qQOw6oC0izBSVf9quWTkskqO/view?usp=sharing"
+              target="_blank"
+              >PDF</a
+            ></button
+          ><br /><br />
+        </div>
+      </form>
+    </div>
+
+    <div id="06" class="modal">
+      <form class="modal-content animate" method="post">
+        <div class="con-container">
+          <span
+            onclick="document.getElementById('06').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          드라이브 팀<br /><br />
+          <img src="006/1.png" />
+          <img src="006/2.png" />
+          <img src="006/3.png" />
+          <img src="006/4.png" /><br /><br />
+          <p>
+            두리번 : DooRiBun <br />
+            두리번 : DooRiBun은 '눈을 크게 뜨고 자꾸 여기저기를 휘둘러 살펴보는
+            모양'이라는 뜻으로 한국 전통문화를 '두리번두리번' 살펴보고 직접
+            체험할 수 있도록 예약이 가능한 웹입니다.
+          </p>
+          <br />
+          <h5>윤주연(개발,디자인)</h5>
+          <br />
+          <button>
+            <a href="https://youtu.be/8JossM_h9jQ" target="_blank">Youtube</a>
+          </button>
+          <button><a href="006/dooribun.pdf" target="_blank">PDF</a></button>
+          <button>
+            <a href="https://github.com/YunJooYeon/DooRiBun" target="_blank"
+              >Git</a
+            ></button
+          ><br /><br />
+        </div>
+      </form>
+    </div>
+
+    <html>
+      <head></head>
+      <body>
+        <div id="07" class="modal">
+          <form class="modal-content animate" method="post">
+            <div class="con-container">
+              <span
+                onclick="document.getElementById('07').style.display='none'"
+                class="close"
+                title="Close Modal"
+                >&times;</span
+              >
+              김서윤팀<br /><br />
+              <img src="007/m1.png" />
+              <img src="007/m2.png" />
+              <img src="007/m3.jpg" />
+              <br /><br />
+              <p>
+                작품설명 <br />
+                인테리어 업체와 고객을 효율적으로 연결 할 수 있는 웹페이지
+                입니다.<br /><br />
+                기존 인테리어 업체에서는 존재하지 않던 3d 모델링 수요 고려해<br /><br />
+                고객이 업체에 상담 접수를 할 때 반영이 가능한 웹페이지 입니다<br /><br />
+              </p>
+              <br />
+              <h5>김서윤(백앤드,프론트앤드,디자인)</h5>
+              <br />
+              <button>
+                <a href="https://youtu.be/e299w3nogRw" target="_blank"
+                  >Youtube</a
+                >
+              </button>
+              <button>
+                <a href="007/m4.pdf" target="_blank">PDF</a>
+              </button>
+            </div>
+          </form>
+        </div>
+      </body>
+    </html>
+
+    <div id="08" class="modal">
+      <form class="modal-content animate" method="post">
+        <div class="con-container">
+          <span
+            onclick="document.getElementById('08').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          날꾸 팀<br /><br />
+          <img src="008/1.PNG" style="width: 320px; height: 206px" />
+          <img src="008/2.PNG" style="width: 320px; height: 206px" />
+          <img
+            src="008/3.PNG"
+            style="width: 320px; height: 206px"
+          /><br /><br />
+          <p>
+            날꾸는 날씨 꾸미기의 줄임말로, 기온에 맞는 옷차림을 추천해주는
+            기온별 코디 추천 쇼핑 사이트 입니다.<br />
+            매일 아침 시시각각 변하는 기온으로 고민하는 옷차림에 관한 문제를
+            해결해주고자 기획하게 되었습니다.
+          </p>
+          <br />
+          <h5>
+            강은지(백앤드), 김시연(프론트앤드), 서유진(프론트앤드),
+            정은하(프론트앤드)
+          </h5>
+          <br />
+          <button><a href="008/전시회.pdf" target="_blank">PDF</a></button>
+          <button>
+            <a href="https://youtu.be/p8dvpQpaLjE" target="_blank"
+              >Youtube</a
+            ></button
+          ><br /><br />
+        </div>
+      </form>
+    </div>
+
+    <div id="09" class="modal">
+      <form class="modal-content animate" method="post">
+        <div class="con-container">
+          <span
+            onclick="document.getElementById('09').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          고민보다 go팀<br /><br />
+          <img src="009/c01.jpg" />
+          <img src="009/c02.jpg" />
+          <img src="009/c08.jpg" />
+          <img src="009/c06.jpg" />
+          <p>
+            <b>제로 웨이스트 쇼핑몰 Be Green</b> <br />
+            그린워싱은 기업이 실제로는 환경에 악영향을 끼치는 제품을 생산하면서
+            친환경적인 이미지를 내세우는 행위를 의미합니다.<br />
+            그래서 제로 웨이스트 쇼핑몰 Be Green은 환경 인증 마크가 부착된
+            제품만 판매하여 SNS 계정, 매상 리워드, 배출 후기 등과 같은 다양한
+            소비자 참여 채널을 통해 소비자의 구매를 이끌고 친환경 활동에
+            동참시키는 것을 목표로 합니다.
+          </p>
+          <br />
+          <h5>
+            김수민(프론트엔드), 김채린(프론트엔드), 임서연(프론트엔드),
+            강윤희(디자인, 백엔드), 박민영(백엔드)
+          </h5>
+          <br />
+          <button>
+            <a href="https://youtu.be/roVTTCWTbM8" target="_blank">Youtube</a>
+          </button>
+          <button>
+            <a
+              href="https://drive.google.com/file/d/1hcAJ6ge5CsyAZckogen8acCTH0AMMbxS/view?usp=sharing"
+              target="_blank"
+              >PDF</a
+            ></button
+          ><br /><br />
+        </div>
+      </form>
+    </div>
+
+    <div id="10" class="modal">
+      <form class="modal-content animate" method="post">
+        <div class="con-container">
+          <span
+            onclick="document.getElementById('10').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          사심 팀<br /><br />
+          <img src="010/img1.jpg" width="320" height="206" />
+          <img src="010/img2.jpg" width="320" height="206" />
+          <br /><br />
+          <p>
+            [키움 - 식물 추천&판매 사이트]<br />
+            단순히 식물 구매만 할 수 있는 것이 아닌, 사이트 이용자 개개인에게
+            맞는 식물들을 추천해주는 사이트입니다.<br />
+            추천 페이지에서 질문에 이용자가 원하는 답을 클릭하면 그 답변을
+            토대로 이용자의 상황에 적절한 식물 목록을 보여줍니다.
+          </p>
+          <br />
+          <h5>
+            최고은(디자인), 최지민(프론트앤드), 임윤아(디자인), 한다예(백앤드,
+            프론트앤드)
+          </h5>
+          <br />
+          <button>
+            <a
+              href="https://drive.google.com/file/d/1YWExU7gJJL7mAn-TQgxMxphiPYx2ZI8k/view?usp=share_link"
+              target="_blank"
+              >PDF</a
+            >
+          </button>
+          <button>
+            <a href="https://youtu.be/kh6pZyq1PeI" target="_blank">Youtube</a>
+          </button>
+          <button>
+            <a
+              href="https://github.com/jjimiin/sasim_project_final.git"
+              target="_blank"
+              >github</a
+            >
+          </button>
+          <br /><br />
+        </div>
+      </form>
+    </div>
+
+    
+<div id="11" class="modal">
+  <form class="modal-content animate" method="post">
+    <div class="con-container">
+      <span
+        onclick="document.getElementById('11').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+      EGG팀<br /><br />
+      <img src="011/EGG소개1.jpg"
+      style="width:320px; height:206px"/>
+	    <img src="011/EGG소개2.jpg" style="width:320px; height:206px"/>
+      <p>
+        <h1>EGG</h1>
+        EGG는 Every Gaenari Group의 줄임말로 한양여자대학교 스마트IT과 학생들의 모임입니다.<br/>
+        일정이 없는 시간에 모임을 생성할 수 있고 생성된 모임은 캘린더에서 확인이 가능합니다. 또한 반에 맞춰진 시간표를 확인할 수가 있으며 개인의 일정을 관리하는 등 시간을 효율적으로 사용할 수 있는 앱입니다.
+      </p>
+      <br />
+      <h5>송예림(팀장), 박윤비(팀원), 김보아(팀원), 고영빈(팀원), 김예린(팀원)</h5>
+      <br />
+      <button><a href="https://www.youtube.com/watch?v=SXj37G-Tyyo" target="_blank">Youtube</a></button>
+      <button><a href="011/EGG_PPT.pdf" target="_blank">PDF</a></button>
+      <button><a href="011/app-debug.apk" target="_blank">APK</a></button><br /><br />
+    </div>
+  </form>
+</div>
+ 
+
+<div id="12" class="modal">
+  <form class="modal-content animate" method="post">
+    <div class="con-container">
+      <span
+        onclick="document.getElementById('12').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+      파이팀<br /><br />
+      <img src="012/main.png" width="320", height="206"/>
+      <img src="012/pop1.png" width="320", height="206"/>
+      <img src="012/pop2.png" width="320", height="206"/>
+      <img src="012/pop3.png" width="320", height="206"/>
+      <p>
+        SWIF <br /> <br />자신의 공부 결과물을 다른 사용자들에게 피드백 받아 개선해나가는 목적을 가진 스터디 매칭 어플리케이션
+      </p>
+      <br />
+      <h5>김다은(디자인, 백엔드), 윤채영(디자인, 백엔드), 여승민(디자인, 백엔드), 이유진(디자인, 백엔드)</h5>
+      <br />
+      <button><a href="https://youtu.be/STS_tqPen94" target="_blank">Youtube</a></button>
+      <button><a href="012/SWIF.pdf" target="_blank">PDF</a></button>
+    </div>
+  </form>
+</div>
+
+<div id="13" class="modal">
+  <form class="modal-content animate" method="post">
+    <div class="con-container">
+      <span
+        onclick="document.getElementById('13').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+      미생팀<br /><br />
+      <!-- <img src="012/main.png" width="320", height="206"/> -->
+     
+      <p>
+         <br /> <br />ecocommunity 커뮤가 지구를 구하다
+      </p>
+      <br />
+      <h5>박주영(디자인, 프론트앤드+백엔드)</h5>
+      <br />
+      <!-- <button><a href="https://youtu.be/STS_tqPen94" target="_blank">Youtube</a></button>
+      <button><a href="012/SWIF.pdf" target="_blank">PDF</a></button> -->
+    </div>
+  </form>
+</div>
+    
+<div id="14" class="modal">
+  <form class="modal-content animate" method="post">
+    <div class="con-container">
+      <span
+        onclick="document.getElementById('14').style.display='none'"
+        class="close"
+        title="Close Modal"
+        >&times;</span
+      >
+      Hello World! 팀<br /><br />
+      <img width="620px" height="406px" src="014/helloworld1.png" />
+      <img width="620px" height="406px" src="014/helloworld2.png" /><br /><br />
+      <p>
+        [Hello World!] <br />뚜벅이들은 무거운 짐을 들고 다니며 에너지를 소비하여 여행의 단순한 목적인 힐링에 불편함을 느낄 수 있습니다. 
+<br />본 팀은 그러한 의미 없는 에너지 소비를 막고자 이용자들의 가벼운 손을 위한 짐 배송 앱을 제작하여 짐 운송을 도와주는 앱을 제작하였습니다.
+      </p>
+      <br />
+      <h5>김수림(디자인, 개발), 도혜진(디자인, 개발), 문지윤(디자인, 개발), 신진영(디자인, 개발), 전효정(디자인, 개발)</h5>
+      <br />
+      <button><a href="https://www.youtube.com/watch?v=PnH2ZU3EWPM" target="_blank">Youtube</a></button>
+      <button><a href="https://docs.google.com/file/d/1tre_rkiGkCw_sgAkpct9nJvns7UeT5YwtC-S6KIHryY/edit?usp=sharing" target="_blank">PDF</a></button>
+    </div>
+  </form>
+</div>
+    
+    
+<div id="15" class="modal">
+      <form class="modal-content animate" method="post">
+        <div class="con-container">
+          <span
+            onclick="document.getElementById('15').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          비타민C 팀<br /><br />
+          <img src="015/popup1.jpg" />
+          <img src="015/popup2.jpg" />
+          <img src="015/popup3.jpg" /><br /><br />
+          <p>
+            향수에 대한 소비와 관심이 늘어난 요즘, 넘쳐나는 정보에 소비자들은 향수 구매에 어려움을 느낍니다. <br />
+            데일리퓸은 사용자 맞춤 테스트를 제공하여 나의 취향에 맞는 향수 계열을 추천해줌으로써 내가 원하는 향을 더욱 간편하고 쉽게 찾아볼 수 있습니다. <br />또한, 다양한 향수에 대한 정보를 제공하며 직접 경험해본 사용자들의 후기, 향수 검색 등의 기능을 제공합니다.
+          </p>
+          <br />
+          <h5>구민주(팀장, 개발), 고수진(디자인), 김혜진(디자인, 개발), 문한주(디자인), 이은희(개발)</h5>
+          <br />
+          <button><a href="https://youtu.be/i-u_mtJl_34" target="_blank">Youtube</a></button>
+          <button><a href="https://drive.google.com/file/d/1gzI9mBFypVoYcJtp9BQhRgCmhEZC5iTp/view?usp=sharing" target="_blank">PDF</a></button>
+          <button><a href="https://drive.google.com/file/d/1jcIFinwKdmHZZoosEhg7CGFgXQ0YOEvM/view?usp=sharing" target="_blank">APK</a></button><br /><br />
+        </div>
+      </form>
+    </div>
+
+
+
+
+    <footer>Copyright © HWY SMART-IT. All rights reserved.</footer>
+    <script src="./js/filter.js"></script>
   </body>
 </html>
