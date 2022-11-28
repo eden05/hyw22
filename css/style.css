@@ -125,7 +125,7 @@ footer {
 } */
 .con-container {
   text-align: center;
-  margin: 20px 0 16px 0;
+  margin: 2% 0;
   padding: 1em;
   position: relative;
   /* height:; */
@@ -173,12 +173,12 @@ span.psw {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(14, 13, 42, 0.9);
-  padding-top: 60px;
+  padding-top: 5%;
 }
 
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto;
+  margin: 1.5% auto;
   border: 1px solid #888;
   width: 80%;
 }
