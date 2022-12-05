@@ -34,6 +34,7 @@ let arryPoster = [
   { name: "고영빈", item: "011" },
   { name: "김보아", item: "011" },
   { name: "김예린", item: "011" },
+  { name: "박윤비", item: "011" },
   { name: "김다은", item: "012" },
   { name: "윤채영", item: "012" },
   { name: "여승민", item: "012" },

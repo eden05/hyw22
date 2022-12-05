@@ -50,13 +50,19 @@ footer {
   margin: 0 auto;
   text-align: center;
   background-color: #1a043c;
+  color: white;
+  margin: auto;
+  display: block;
+  height: 150px;
+  /* line-height: 150px; */
 }
-.mainImg img {
+.mainImg h4{color: #9388a3;}
+/* .mainImg img {
   width: 320px;
   margin: auto;
   display: block;
   height: 150px;
-}
+} */
 
 .poster {
   display: flex;
